@@ -1,0 +1,77 @@
+body {
+  background: rgba(51, 51, 51, 0.85);
+}
+
+.theatre-wrap {
+  max-width: 1138px;
+  margin: 0 auto;
+
+
+}
+
+.theatre-navbar {
+
+  padding: 50px 0px;
+  flex-wrap: nowrap;
+  // .theatre-navbar__list
+  &__list {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.35;
+    text-align: left;
+    & li,
+    a {
+      color: white;
+    }
+  }
+}
+.poster-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+
+  // .poster-container__title
+  &__title {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans Condensed";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 10%;
+    text-align: left;
+  }
+  // .poster-container__text
+  &__text {
+    padding: 50px 0px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 540px;
+  }
+ 
+  &__btn {
+    
+    background: rgb(209, 169, 84);
+    width: 160px;
+    height: 50px;
+    color: white;
+  }
+    // .poster-container__img
+    &__img {
+    display: flex;
+align-items: end;
+    //max-width: 350px;
+    height: auto;
+    }
+}
+
+
+
