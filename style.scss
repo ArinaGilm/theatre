@@ -1,21 +1,19 @@
-body {
-  background: rgba(51, 51, 51, 0.85);
-}
-
-.theatre-wrap {
-  max-width: 1138px;
+.theatre-header,
+.theatre-main {
+  max-width: 1920px;
+  height: auto;
   margin: 0 auto;
-
-
 }
-
+.theatre-wrap{
+  background: url(img/background.jpeg) 0 0 / cover no-repeat;
+}
 .theatre-navbar {
-
   padding: 50px 0px;
   flex-wrap: nowrap;
+  margin: 0px 160px;
   // .theatre-navbar__list
   &__list {
-display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Open Sans Condensed";
@@ -29,11 +27,20 @@ display: flex;
     }
   }
 }
+
 .poster-container {
   display: flex;
-  flex-direction: column;
   padding-top: 200px;
+  margin: 0px 160px;
 
+  // .poster-container__history
+
+  &__history {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 65%;
+    padding-right: 150px;
+  }
   // .poster-container__title
   &__title {
     color: rgb(255, 255, 255);
@@ -54,24 +61,37 @@ display: flex;
     line-height: 1.35;
     letter-spacing: 0%;
     text-align: left;
-    max-width: 540px;
   }
- 
+  // .poster-container__btn
   &__btn {
-    
     background: rgb(209, 169, 84);
     width: 160px;
     height: 50px;
     color: white;
   }
-    // .poster-container__img
-    &__img {
+  // .poster-container__img
+  &__img {
     display: flex;
-align-items: end;
-    //max-width: 350px;
-    height: auto;
-    }
+    flex: 1 1 35%;
+    position: relative;
+   
+  }
+
+  &__img-la-scala {
+    display: flex;
+    position: absolute;
+    top: -150px;
+
+    z-index: 1;
+  }
+  &__rectangle {
+    display: flex;
+    width: 364px;
+    height: 493px;
+    background: rgb(209, 169, 84);
+    position: absolute;
+    top: -130px;
+   
+  
+  }
 }
-
-
-

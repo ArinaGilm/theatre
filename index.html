@@ -8,18 +8,22 @@
     <title>Theatre</title>
   </head>
   <body>
+    <div class="theatre-wrap">
     <header class="theatre-header">
-      <div class="theatre-wrap">
-        <nav class="theatre-navbar">
-          <ul class="theatre-navbar__list">
-            <li><a href="#">ГЛАВНАЯ</a></li>
-            <li><a href="#">O ТЕАТРЕ</a></li>
-            <li><a href="#">НАШИ ПОСТАНОВКИ</a></li>
-            <li><a href="#">ПАРТНЕРЫ ТЕАТРА</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
-        <div class="poster-container">
+      <nav class="theatre-navbar">
+        <ul class="theatre-navbar__list">
+          <li><a href="#">ГЛАВНАЯ</a></li>
+          <li><a href="#">O ТЕАТРЕ</a></li>
+          <li><a href="#">НАШИ ПОСТАНОВКИ</a></li>
+          <li><a href="#">ПАРТНЕРЫ ТЕАТРА</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+          <li><a href="#">+7 495 123-45-67</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="theatre-main">
+      <div class="poster-container">
+        <div class="poster-container__history">
           <h1 class="poster-container__title">БОЛЬШОЙ ТЕАТР</h1>
           <p class="poster-container__text">
             Большо́й теа́тр — петербургский театр, существовавший в 1784—1886
@@ -27,12 +31,16 @@
             в Санкт-Петербурге, крупнейшее в России и одно из крупнейших
             театральных зданий в Европе XVIII.
           </p>
-          <button class="poster-container__btn" type="button">АФИША</button>   
-          <div class="poster-container__img">
+          <button class="poster-container__btn" type="button">АФИША</button>
+        </div>
+        <div class="poster-container__img">
+          <div class="poster-container__img-la-scala">
             <img src="img/la-scala.jpeg" alt="poster" />
           </div>
+          <div class="poster-container__rectangle"></div>
         </div>
       </div>
-    </header>
+    </div>
+    </main>
   </body>
 </html>

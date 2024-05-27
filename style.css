@@ -1,15 +1,18 @@
-body {
-  background: rgba(51, 51, 51, 0.85);
+.theatre-header,
+.theatre-main {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .theatre-wrap {
-  max-width: 1138px;
-  margin: 0 auto;
+  background: url(img/background.jpeg) 0 0/cover no-repeat;
 }
 
 .theatre-navbar {
   padding: 50px 0px;
   flex-wrap: nowrap;
+  margin: 0px 160px;
 }
 .theatre-navbar__list {
   display: flex;
@@ -28,8 +31,14 @@ body {
 
 .poster-container {
   display: flex;
-  flex-direction: column;
   padding-top: 200px;
+  margin: 0px 160px;
+}
+.poster-container__history {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 65%;
+  padding-right: 150px;
 }
 .poster-container__title {
   color: rgb(255, 255, 255);
@@ -49,7 +58,6 @@ body {
   line-height: 1.35;
   letter-spacing: 0%;
   text-align: left;
-  max-width: 540px;
 }
 .poster-container__btn {
   background: rgb(209, 169, 84);
@@ -59,6 +67,20 @@ body {
 }
 .poster-container__img {
   display: flex;
-  align-items: end;
-  height: auto;
+  flex: 1 1 35%;
+  position: relative;
+}
+.poster-container__img-la-scala {
+  display: flex;
+  position: absolute;
+  top: -150px;
+  z-index: 1;
+}
+.poster-container__rectangle {
+  display: flex;
+  width: 364px;
+  height: 493px;
+  background: rgb(209, 169, 84);
+  position: absolute;
+  top: -130px;
 }/*# sourceMappingURL=style.css.map */
